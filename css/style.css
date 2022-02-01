@@ -820,7 +820,7 @@
     margin-bottom: 36px;
   }
 }
-@media (min-width: 641px) and (max-width: 1199px) and (orientation: landscape) {
+@media (min-width: 915px) and (max-width: 1199px) and (orientation: landscape) {
   .trend {
     width: 24.7%;
   } 
@@ -862,11 +862,9 @@
     align-items: center;
     padding: 44px 15px;
   } 
-  .trend:nth-child(n + 2) {
-    margin-top: 4px;
-  } 
+   
   .trend {
-    width: 99%;
+    width: 100%;
   }
   .trends {
     margin-top: 25px;    
@@ -991,7 +989,7 @@
 }
 @media (max-width: 915px) and (orientation: landscape) {
   .trend {
-    width: 49.4%;
+    width: calc(50% - 2px);
   } 
   .trend:nth-child(2n + 2) {
     margin-left: 4px;
@@ -999,4 +997,9 @@
   .trend:nth-child(n + 3) {
     margin-top: 4px;
   } 
-} 
+}
+@media (max-width: 640px) {
+  .trend:nth-child(n + 2) {
+    margin-top: 4px;
+  } 
+}  
