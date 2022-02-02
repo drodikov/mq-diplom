@@ -932,8 +932,11 @@
   .search {
     margin-top: 60px;
   }
+  .search-group {    
+    width: calc(100% - 49px);
+  }
   .search-field {
-    flex-grow: 1;
+    width: 100%;
   }
   .search-button:hover {
     background-color: #323232;
